@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "texto": "Qual a sua idade",
+        "respostas": ["15 ou menos", "Entre 16 e 18", "Entre 19 e 29", "Entre 30 e 39", "Entre 40 e 49", "Acima de 50"]
+    },
+    {
+        "id": 2,
+        "texto": "Qual o seu gênero",
+        "respostas": [ "Mulher", "Homem", "Não Binário", "Outros", "Prefiro não responder" ]
+    },
+    {
+        "id": 3,
+        "texto": "Qual é sua escolaridade",
+        "respostas": [ "Cursando o fundamental", "Cursnado o 1º ano do ensino médio", "Cursnado o 2º ano do ensino médio", "Cursnado o 3º ano do ensino médio", "Ensino médio completo", "Ensino superior incompleto ou cursando", "Ensino superior completo" ]
+    },
+    {
+        "id": 4,
+        "texto": "Qual dispositivo você mais utiliza para acessar a internet? (Escolha um ou mais)",
+        "respostas": [ "Celular", "Tablet", "Computador de Mesa", "Notebook", "Video Game", "Smart-TV" ]
+    },
+    {
+        "id": 5,
+        "texto": "Com que você gasta mais tempo na internet? (Escolha um ou mais)",
+        "respostas": [ "Estudos/educação", "Redes sociais (Instagran, X, Facebook etc.)", "Jogos (CS, Fortnite, LOL etc.)", "Streaming (Netflix, Disney+, Max etc.)", "Cassino Online (apostas, Tigrinho etc.)", "Compras online (Shopee, Shein, Amazon etc.)", "Chats (WhatsApp, Messenger etc.)", "Aplicativos de relacionamento (Tinder, Bumble etc.)" ]
+    },
+    {
+        "id": 6,
+        "texto": "Você já gastou dinheiro na internet",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": ["Sim"],
+            "pergunta": {
+                "texto": "Com qual frêquencia",
+                "respostas": ["Uma única vez", "Raramente (uma vez no ano)", "Esporadicamente (uma vez ao mês)", "Frequentemente (toda semana)"],
+                "perguntaSecreta": {
+                    "gatilho": ["Uma única vez", "Raramente (uma vez no ano)", "Esporadicamente (uma vez ao mês)", "Frequentemente (toda semana)"],
+                    "pergunta": {
+                        "texto": "Com qual desses items",
+                        "respostas": ["Jogos (CS, Fortnite, LOL etc.)", "Streaming (Netflix, Disney+, Max etc.)", "Cassino Online (apostas, Tigrinho etc.)", "Compras online (Shopee, Shein, Amazon etc.)", "Aplicativos de relacionamento (Tinder, Bumble etc.)"]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "id": 7,
+        "texto": "Você já criou alguma conta fake ou com algum dado pessoal falso?",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": ["Sim"],
+            "pergunta": {
+                "texto": "Por qual motivo você precisou de uma conta fake?",
+                "respostas": ["Stalkear alguém", "Comentar em posts e forúms anonimamente", "Hackear outras contas", "Outro:"]
+            }
+        }
+    },
+    {
+        "id": 8,
+        "texto": "Você já usou VPN",
+        "respostas": ["Sim", "Não", "Não sei responder"]
+    },
+    {
+        "id": 9,
+        "texto": "Já utilizou softwares sem as devidas licenças",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": "Sim",
+            "pergunta": {
+                "texto": "Qual foi a finalidade",
+                "respostas": [ "Jogar jogos", "Edição de fotos e vídeos", "Fins acadêmicos", "Sistema operacional", "Acessar TV a cabo", "Consumir Músicas, Series ou Filmes" ]
+            }
+        }
+    },
+    {
+        "id": 10,
+        "texto": "Você já tentou/conseguiu invadir a conta de alguem sem a autorização",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": "Sim",
+            "pergunta": {
+                "texto": "O que te levou a (tentar) invadir a conta de outra pessoa sem autorização",
+                "respostas": ["Vingança", "Brincadeira", "Curiosidade", "Com intuito de chantagem ou extorsão", "Usar a identidade da pessoa", "Outro:"]
+            }
+        }
+    },
+    {
+        "id": 11,
+        "texto": "Você já acessou os dados ou dispositivo de outra pessoa sem autorização?",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": "Sim",
+            "pergunta": {
+                "texto": "O que te levou a acessar os dados ou dispositivo de outra pessoa sem autorização?",
+                "respostas": ["Vingança", "Brincadeira", "Curiosidade", "Com intuito de chantagem ou extorsão", "Usar a identidade da pessoa", "Outro:"]
+            }
+        }
+    },
+    {
+        "id": 12,
+        "texto": "Você já sofreu algum tipo de assédio ou bullying online?",
+        "respostas": ["Sim", "Não", "Prefiro não responder"]
+    },
+    {
+        "id": 13,
+        "texto": "Você já foi vítima de alum crime digital?",
+        "respostas": ["Clonaram minha conta bancária", "Roubaram meus dados", "Outro:", "Nunca fui vítima"]
+    },
+    {
+        "id": 14,
+        "texto": "Você utiliza ou já utilizou IA (Inteligência Artificial)",
+        "respostas": ["Sim", "Não"],
+        "perguntaSecreta": {
+            "gatilho": "Sim",
+            "pergunta": {
+                "texto": "Para qual finalidade",
+                "respostas": ["Geração de texto", "Geração de imagem", "Geração de voz"],
+                "perguntaSecreta": {
+                    "gatilho": "Geração de imagem",
+                    "texto": "Você já editou foto de alguém que você conhece com IA",
+                    "respostas": ["Sim", "Não"]
+                }
+            }
+        }
+    },
+    {
+        "id": 15,
+        "texto": "Que cuidados você toma para proteger seus dados pessoais online. (Escolha 1 ou mais)",
+        "respostas": ["Senhas fortes", "Autenticação de 2 fatores", "Não compartilhar informações pessoais", "Não me preocupo com isso"]
+    },
+    {
+        "id": 16,
+        "texto": "Você considera que possui conhecimento suficiente sobre segurança digital",
+        "respostas": ["Sim", "Não", "Não sei responder"]
+    }
+]
